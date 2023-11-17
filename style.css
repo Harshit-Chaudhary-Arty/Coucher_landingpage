@@ -162,9 +162,48 @@ span img{
     width: 45%;
     /* background-color: aqua; */
     /* padding: 3% 0;  */
+    position: relative;
 }
 
 #hright img{
     width: 100%;
     border-radius: 1.8vw;
+}
+
+#hright #overlay{
+    background-color: black;
+    width: 20%;
+    height: 10%;
+    position: absolute;
+    left: 80%;
+    top: 0;
+    z-index: 6;
+    border-bottom-left-radius: 1vw ;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 6%;
+}
+
+#hright #book{
+    width: 90%;
+    position: absolute;
+    height: 10%;
+    background-color: rgba(109, 109, 109, 0.4);
+    filter: blur(1);
+    z-index: 8;
+    transform: translate(-50%,-50%);
+    top: 95%;
+    left: 50%;
+    font-size: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    padding-right: 2%;
+    border: 3px solid rgb(190, 190, 190);
+    border-radius: 40px;
+}
+#book i{
+    font-size:1.8vw ;
 }
