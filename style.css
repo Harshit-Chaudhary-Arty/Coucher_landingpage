@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+#main{
+    padding: 0 2%;
+}
+
+#page1{
+    height: 80vh;
+    width: 100%;
+    background-color: black;
+}
+
+#nav{
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2%;
+    border-bottom: 2px solid white;
+    font-size: 1.8vh;
+    position: relative;
+    height: 14vh;
+}
+
+
+#logo img{
+    /* object-fit: contain; */
+    height: 6vw;
+    width: 6vw;  
+    filter: invert(1);
+}
+
+#nav a{
+    text-decoration: none;
+    color: white;
+}
+
+#page2{
+    background-color: blue;
+    height: 80vh;
+    width: 100%;
+}
+
+#nav #links{
+    width: 20vw;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#nav #sign{
+    width: 14%;
+    display: flex;
+    padding: 0 2%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#sign i{
+    font-size: 1.5vw;
+    border: 2px solid white ;
+    padding: 10%;
+    border-radius: 50%;
+}
+
+#hero{
+    height: 65vh;
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+}
+
+#hleft{
+    width: 45%;
+    background-color: darkcyan;
+}
+
+#hright{
+    width: 45%;
+    background-color: aqua;
+}
