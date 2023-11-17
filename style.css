@@ -7,6 +7,7 @@ html , body{
     height: 100%;
     width: 100%;
     color: white;
+    background-color: black;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -26,7 +27,7 @@ html , body{
     align-items: center;
     justify-content: space-between;
     padding: 0 2%;
-    border-bottom: 2px solid white;
+    border-bottom: 3px solid rgb(173, 173, 173); 
     font-size: 1.8vh;
     position: relative;
     height: 14vh;
@@ -75,17 +76,76 @@ html , body{
 
 #hero{
     height: 65vh;
-    background-color: red;
+    /* background-color: red; */
     display: flex;
     justify-content: space-between;
 }
 
 #hleft{
+    display: flex;
+    height: 100%;
     width: 45%;
-    background-color: darkcyan;
+    /* background-color: darkcyan; */
+    /* padding: 3% 0;  */
+    position: relative;
+    flex-direction: column;
+}
+
+#hleft #up{
+    height: 70%;
+    display: flex;
+    /* background-color: yellow; */
+    flex-direction: column;
+}
+
+#down{
+    margin-top: 2%;
+    height: 30%;
+    background-color: greenyellow;
+    border-top: 3px solid rgb(173, 173, 173);
+    
 }
 
 #hright{
+    height: 100%;
     width: 45%;
     background-color: aqua;
+    padding: 3% 0; 
+}
+
+#hleft h1{
+    font-size: 6vw;
+    font-weight: 400;
+    letter-spacing: -0.3vw;
+    line-height: 1.2;
+}
+
+span img{
+    height:6.2vw;
+    border: 7px solid black;
+    border-radius:50%;
+    position: absolute;
+}
+
+#s1{
+    left: 0;
+    /* top: 50%; */
+}
+
+#s2{
+    left: 4.8vw;
+    z-index: 3;
+    /* top: 50%; */
+}
+   
+#s3{
+    left: 9.6vw;
+    z-index: 5;
+    /* top: 50%; */
+}
+   
+#s4{
+    position: absolute;
+    left: 16.8vw;
+    
 }
