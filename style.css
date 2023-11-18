@@ -220,11 +220,7 @@ span img{
     justify-content: space-between;
 }
 
-#info{
-    width: 20%;
-    background-color: bisque;
-    height: 40vh;
-}
+
 
 #folders{
     width: 65%;
@@ -232,6 +228,7 @@ span img{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: black;
 }
 
 .f{
@@ -242,15 +239,17 @@ span img{
     border-radius: 3vh;
     border-top-right-radius: 0;
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;  
+    padding: 3% 3.5%;  
+    justify-content: space-between;
 }
 
 .over{
-    width: 30%;
+    width: 35%;
     height: 20%;
     background-color: yellow;
     position: absolute;
-    left: 70%;
+    left: 65%;
     top: -6%;
     border-radius: 6vh;
     border-top-right-radius: 4vh;
@@ -259,6 +258,8 @@ span img{
 
 #f1{
     background-color: #FD5E09;
+    /* align-items: center; */
+
 }
 
 #o1{
@@ -267,6 +268,8 @@ span img{
 
 #f2{
     background-color: #E0E0E0;
+    align-items: center;
+
 }
 
 #o2{
@@ -280,3 +283,67 @@ span img{
 #o3{
     background-color: #FDC959;
 }
+
+
+#f1 img{
+    height: 40%;
+    margin-right: 60%;
+
+}
+
+
+#sh1{
+    font-weight: 500;
+    letter-spacing: -0.1vw;
+    font-size: 2.8vw;
+    line-height: 1.1;
+}
+
+#sh2{
+    font-weight: 400;
+    letter-spacing: -0.5vw;
+    font-size: 5.8vw;
+    line-height: 1.1;
+}
+
+#title2{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#title2 #arrow{
+    font-size: 4vw;
+    font-weight: 100;
+}
+
+#title h2{
+    font-weight: 500;
+    font-size: 1.3vw;
+}
+
+#info{
+    width: 20%;
+    /* background-color: bisque; */
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.in{
+    border: 2px solid white;
+    border-radius: 50px;
+    font-weight: 300;
+    padding: 2% 5%;
+    text-align: center;
+}
+
+#in i{
+    font-size: 4vw;
+}
+
+
+
