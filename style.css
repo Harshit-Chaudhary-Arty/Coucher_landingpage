@@ -12,7 +12,7 @@ html , body{
 }
 
 #main{
-    padding: 0 2%;
+    padding: 0 5%;
 }
 
 #page1{
@@ -26,7 +26,7 @@ html , body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 2%;
+    /* padding: 0 2%; */
     border-bottom: 3px solid rgb(173, 173, 173); 
     font-size: 1.8vh;
     position: relative;
@@ -46,11 +46,6 @@ html , body{
     color: white;
 }
 
-#page2{
-    background-color: blue;
-    height: 100vh;
-    width: 100%;
-}
 
 #nav #links{
     width: 20vw;
@@ -186,14 +181,14 @@ span img{
 }
 
 #hright #book{
-    width: 90%;
+    width: 88%;
     position: absolute;
-    height: 10%;
+    height: 12%;
     background-color: rgba(109, 109, 109, 0.4);
     filter: blur(1);
     z-index: 8;
     transform: translate(-50%,-50%);
-    top: 95%;
+    top: 85%;
     left: 50%;
     font-size: 1vw;
     display: flex;
@@ -206,4 +201,82 @@ span img{
 }
 #book i{
     font-size:1.8vw ;
+}
+
+#page2{
+    /* background-color: blue; */
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    padding-top: 10%;
+}
+
+#section2{
+    width: 100%;
+    /* background-color: aqua; */
+    min-height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#info{
+    width: 20%;
+    background-color: bisque;
+    height: 40vh;
+}
+
+#folders{
+    width: 65%;
+    /* background-color: brown; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.f{
+    width: 33%;
+    /* background-color: red; */
+    height: 40vh;
+    position: relative;
+    border-radius: 3vh;
+    border-top-right-radius: 0;
+    display: flex;
+    flex-direction: column;    
+}
+
+.over{
+    width: 30%;
+    height: 20%;
+    background-color: yellow;
+    position: absolute;
+    left: 70%;
+    top: -6%;
+    border-radius: 6vh;
+    border-top-right-radius: 4vh;
+    z-index: -2;
+}
+
+#f1{
+    background-color: #FD5E09;
+}
+
+#o1{
+    background-color: #FD5E09;
+}
+
+#f2{
+    background-color: #E0E0E0;
+}
+
+#o2{
+    background-color: #E0E0E0;
+}
+
+#f3{
+    background-color: #FDC959;
+}
+
+#o3{
+    background-color: #FDC959;
 }
