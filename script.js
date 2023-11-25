@@ -34,18 +34,28 @@ gsap.from("#hright",{
     stagger:0.3,
 })
 
-gsap.from("#folders .f",{
-    x:30,
-    duration:1.2,
+gsap.from("#section2",{
+    x:-20,
+    delay:1.2,
+    duration:1.4,
     opacity:0,
     stagger:0.3,
-    
+    scrollTrigger:"#section2"
+})
+
+gsap.from("#folders .f",{
+    x:35,
+    duration:1,
+    opacity:0,
+    stagger:0.4,
     scrollTrigger:{
         trigger:"#page2 #section2",
         scroll:"body",
         markers:true,     
-        start:"top 50%",  
+        start:"top 40%",  
         end:"top 60%", 
     }
 })
+
+
 

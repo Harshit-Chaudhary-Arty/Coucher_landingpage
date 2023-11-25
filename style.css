@@ -51,7 +51,6 @@ html , body{
     width: 20vw;
     display: flex;
     justify-content: space-between;
-
 }
 
 #nav #sign{
@@ -67,7 +66,17 @@ html , body{
     border: 2px solid white ;
     padding: 10%;
     border-radius: 50%;
+    transition: 0.2s;
+
 }
+
+#sign i:hover{
+    font-size: 1.8vw;
+    color: black;
+    transition: 0.2s;
+    background-color: white;
+}
+
 
 #hero{
     height: 70vh;
@@ -127,7 +136,15 @@ span img{
     border: 7px solid black;
     border-radius:50%;
     position: absolute;
+    transition: 0.3s;
 }
+
+span img:hover{
+    border: 7px solid rgb(255, 255, 255);
+    transition: 0.3s;
+}
+
+
 
 #s1{
     left: 0;
@@ -184,8 +201,8 @@ span img{
     width: 88%;
     position: absolute;
     height: 12%;
-    background-color: rgba(109, 109, 109, 0.4);
-    filter: blur(1);
+    /* background-color: rgba(109, 109, 109, 0.4); */
+    filter: blur(0.8);
     z-index: 8;
     transform: translate(-50%,-50%);
     top: 85%;
@@ -198,7 +215,16 @@ span img{
     padding-right: 2%;
     border: 3px solid rgb(190, 190, 190);
     border-radius: 40px;
+    transition: 0.2s;
 }
+
+#book:hover{
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+    
+}
+
 #book i{
     font-size:1.8vw ;
 }
