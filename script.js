@@ -1,7 +1,7 @@
-const scroll = new LocomotiveScroll({
-    el: document.querySelector('#main'),
-    smooth: true
-});
+// const scroll = new LocomotiveScroll({
+//     el: document.querySelector('#main'),
+//     smooth: true
+// });
 
 gsap.from("#nav,#logo ,#links a,#sign",{
     y:-20,
@@ -34,32 +34,18 @@ gsap.from("#hright",{
     stagger:0.3,
 })
 
-// gsap.from("#folders .f",{
-//     x:30,
-//     duration:1.2,
-//     opacity:0,
-//     stagger:0.3,
-//     scrollTrigger:"#folders"
-//     scrollTrigger:{
-//         trigger:"#page2 #section2",
-//         scroll:"body",
-//         markers:true,     
-//         start:"top 50%"   
-//     }
-// })
-
-// gsap.to("#page2 ",{
-//     y:-30,
-//     duration:3.2,
-//     opacity:0,
-//     delay:1,
-//     scrollTrigger:"#page2"
-// })
-
-gsap.to("#page2",{
-    y:-30,
-    duration:3.2,
+gsap.from("#folders .f",{
+    x:30,
+    duration:1.2,
     opacity:0,
-    // delay:1,
-    scrollTrigger:"#page2",
+    stagger:0.3,
+    
+    scrollTrigger:{
+        trigger:"#page2 #section2",
+        scroll:"body",
+        markers:true,     
+        start:"top 50%",  
+        end:"top 60%", 
+    }
 })
+

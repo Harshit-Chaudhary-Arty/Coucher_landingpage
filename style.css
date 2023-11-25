@@ -365,5 +365,11 @@ span img{
     justify-content: space-between;
 }
 
-
+#page3{
+    background-color: blue;
+    height: 100vh;
+    width: 100%;
+    /* position: relative;
+    padding-top: 10%; */
+}
 
