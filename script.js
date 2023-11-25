@@ -48,10 +48,18 @@ gsap.from("#hright",{
 //     }
 // })
 
-gsap.to("#page2 section2",{
+// gsap.to("#page2 ",{
+//     y:-30,
+//     duration:3.2,
+//     opacity:0,
+//     delay:1,
+//     scrollTrigger:"#page2"
+// })
+
+gsap.to("#page2",{
     y:-30,
     duration:3.2,
     opacity:0,
     // delay:1,
-    scrollTrigger:"#page2 section2",
+    scrollTrigger:"#page2",
 })
