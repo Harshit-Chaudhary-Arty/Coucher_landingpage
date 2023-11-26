@@ -59,17 +59,30 @@ gsap.from("#folders .f",{
 
 
 gsap.from("#headings .h",{
-    y:-20,
+    y:-30,
     opacity:0,
-    duration:1,
-    stagger:0.3,
+    duration:0.5,
+    stagger:0.4,
     scrollTrigger:{
         scroll:"body",
         trigger:"#headings .h",
-        start:"top 30%",
+        start:"top 28%",
         // markers:true,
         // end:"top 50%"
     }
 })
 
+
+gsap.from("#footer",{
+    y:150,
+    opacity:0,
+    duration:1.7,
+    stagger:0.6,
+    scrollTrigger:{
+        scroll:"body",
+        trigger:"#footer",
+        start:"top 90%",
+        markers:true
+    }
+})
 
