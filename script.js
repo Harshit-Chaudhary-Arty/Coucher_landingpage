@@ -3,6 +3,51 @@
 //     smooth: true
 // });
 
+
+
+
+
+
+function navanimation(){
+    gsap.to("#nav1 svg",{
+        transform:"translateY(-100%)",
+        scrollTrigger:{
+            trigger:"#page1",
+            scroller:"#main",
+            start:"top 0",
+            end:"top -5%",
+            scrub:true,
+           }
+    })
+    
+    gsap.to("#nav2 #links",{
+        transform:"translateY(-100%)",
+        opacity:0,
+        scrollTrigger:{
+            trigger:"#page1",
+            scroller:"#main",
+            start:"top 0",
+            end:"top -5%",
+            scrub:true,
+           }
+    })
+}
+navanimation()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 gsap.from("#nav,#logo ,#links a,#sign",{
     y:-20,
     duration:1,
@@ -32,15 +77,24 @@ gsap.from("#hright",{
     duration:1.2,
     opacity:0,
     stagger:0.3,
+
 })
 
-gsap.from("#section2",{
+gsap.from("#info",{
     x:-20,
     delay:1.2,
     duration:1.4,
     opacity:0,
     stagger:0.3,
-    scrollTrigger:"#section2"
+    scrollTrigger:{
+        trigger:"#page2 #section2",
+        scroll:"body",        
+        start:"top 50%",  
+        end:"top 15%", 
+        // markers:true,
+        scrub:true,
+         scrub:3,
+    }
 })
 
 gsap.from("#folders .f",{
@@ -48,12 +102,16 @@ gsap.from("#folders .f",{
     duration:1,
     opacity:0,
     stagger:0.4,
+    
     scrollTrigger:{
         trigger:"#page2 #section2",
-        scroll:"body",
-             
-        start:"top 40%",  
-        end:"top 90%", 
+        scroll:"body",        
+        start:"top 50%",  
+        end:"top 15%", 
+        // markers:true,
+        scrub:true,
+         scrub:3,
+
     }
 })
 
@@ -68,7 +126,9 @@ gsap.from("#headings .h",{
         trigger:"#headings .h",
         start:"top 28%",
         // markers:true,
-        // end:"top 50%"
+        end:"top 16%",
+        scrub:true,
+        scrub:3,
     }
 })
 
@@ -82,7 +142,33 @@ gsap.from("#footer",{
         scroll:"body",
         trigger:"#footer",
         start:"top 90%",
-        markers:true
+        // markers:true
     }
 })
+
+function pointeranim(){
+    var area= document.querySelector("body")
+    var pointer =document.querySelector("#pointer")
+    area.addEventListener("mouseenter",function(){
+        gsap.to(pointer,{
+            scale:1,
+            opacity:1
+        })
+    })
+    area.addEventListener("mousemove",function(dets){
+        gsap.to(pointer,{
+            left:dets.x,
+            top:dets.y,
+        })
+    })
+}
+pointeranim()
+
+    
+
+
+
+
+
+
 

@@ -477,6 +477,10 @@ h1 a:hover{
     color: black;
 }
 
+#fleft a:hover{
+    font-weight: 500;
+
+}
 
 #fright{
     display: flex;
@@ -489,7 +493,10 @@ h1 a:hover{
     color: black;
     font-size: x-large;
     text-align: right;
+}
 
+#fright a:hover{
+    font-weight: 500;
 }
 
 #fright h2{
@@ -499,8 +506,44 @@ h1 a:hover{
 
 #fcenter img{
     position: absolute;
-    height: 50%;
+    height: 15em;
     transform: translate(-50%,-50%);
-    left: 50%;
-    top: 60%;
+    left: 49%;
+    top: 50%;
+}
+
+#left{
+    height: 100vh;
+    width: 5vw;
+    background-color: rgb(12, 12, 12);
+    
+    position: fixed;
+    transform: translate(-50%,-50%);
+    left: 0%;
+    top: 50%;
+    z-index: 8;
+}
+
+#right{
+    height: 100vh;
+    width: 5vw;
+    background-color: rgb(12, 12, 12);
+    
+    position: fixed;
+    transform: translate(-50%,-50%);
+    left: 100%;
+    top: 50%;
+    z-index: 8;
+}
+
+#pointer{
+    height: 3vh;
+    width: 3vh;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    mix-blend-mode: difference;
+    position: fixed;
+    z-index: 1000;
+    scale: 0;
+    opacity: 0;
 }
